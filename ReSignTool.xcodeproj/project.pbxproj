@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04C12EC2215F8FE800570CD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C12EC1215F8FE800570CD3 /* AppDelegate.m */; };
+		04C12EC5215F8FE800570CD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C12EC4215F8FE800570CD3 /* ViewController.m */; };
+		04C12EC7215F8FF400570CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C12EC6215F8FF400570CD3 /* Assets.xcassets */; };
+		04C12ECA215F8FF400570CD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C12EC8215F8FF400570CD3 /* Main.storyboard */; };
+		04C12ECD215F8FF400570CD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C12ECC215F8FF400570CD3 /* main.m */; };
+		04C12ED8215F8FF500570CD3 /* ReSignToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C12ED7215F8FF500570CD3 /* ReSignToolTests.m */; };
+		04C12EE3215F8FF500570CD3 /* ReSignToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C12EE2215F8FF500570CD3 /* ReSignToolUITests.m */; };
+		04C12EF5215F90E800570CD3 /* NSTextField+Copypast.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C12EF2215F90E800570CD3 /* NSTextField+Copypast.m */; };
+		04C12EF6215F90E800570CD3 /* NSTextField+Dragging.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C12EF4215F90E800570CD3 /* NSTextField+Dragging.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04C12ED4215F8FF500570CD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C12EB5215F8FE800570CD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04C12EBC215F8FE800570CD3;
+			remoteInfo = ReSignTool;
+		};
+		04C12EDF215F8FF500570CD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C12EB5215F8FE800570CD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04C12EBC215F8FE800570CD3;
+			remoteInfo = ReSignTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04C12EBD215F8FE800570CD3 /* ReSignTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSignTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C12EC0215F8FE800570CD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04C12EC1215F8FE800570CD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04C12EC3215F8FE800570CD3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04C12EC4215F8FE800570CD3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04C12EC6215F8FF400570CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04C12EC9215F8FF400570CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04C12ECB215F8FF400570CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C12ECC215F8FF400570CD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04C12ECE215F8FF400570CD3 /* ReSignTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReSignTool.entitlements; sourceTree = "<group>"; };
+		04C12ED3215F8FF500570CD3 /* ReSignToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReSignToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C12ED7215F8FF500570CD3 /* ReSignToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReSignToolTests.m; sourceTree = "<group>"; };
+		04C12ED9215F8FF500570CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C12EDE215F8FF500570CD3 /* ReSignToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReSignToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C12EE2215F8FF500570CD3 /* ReSignToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReSignToolUITests.m; sourceTree = "<group>"; };
+		04C12EE4215F8FF500570CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C12EF1215F90E800570CD3 /* NSTextField+Copypast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextField+Copypast.h"; sourceTree = "<group>"; };
+		04C12EF2215F90E800570CD3 /* NSTextField+Copypast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextField+Copypast.m"; sourceTree = "<group>"; };
+		04C12EF3215F90E800570CD3 /* NSTextField+Dragging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextField+Dragging.h"; sourceTree = "<group>"; };
+		04C12EF4215F90E800570CD3 /* NSTextField+Dragging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextField+Dragging.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04C12EBA215F8FE800570CD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C12ED0215F8FF500570CD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C12EDB215F8FF500570CD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C12EB4215F8FE800570CD3 = {
+			isa = PBXGroup;
+			children = (
+				04C12EBF215F8FE800570CD3 /* ReSignTool */,
+				04C12ED6215F8FF500570CD3 /* ReSignToolTests */,
+				04C12EE1215F8FF500570CD3 /* ReSignToolUITests */,
+				04C12EBE215F8FE800570CD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04C12EBE215F8FE800570CD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04C12EBD215F8FE800570CD3 /* ReSignTool.app */,
+				04C12ED3215F8FF500570CD3 /* ReSignToolTests.xctest */,
+				04C12EDE215F8FF500570CD3 /* ReSignToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04C12EBF215F8FE800570CD3 /* ReSignTool */ = {
+			isa = PBXGroup;
+			children = (
+				04C12EF0215F90E800570CD3 /* extension */,
+				04C12EC0215F8FE800570CD3 /* AppDelegate.h */,
+				04C12EC1215F8FE800570CD3 /* AppDelegate.m */,
+				04C12EC3215F8FE800570CD3 /* ViewController.h */,
+				04C12EC4215F8FE800570CD3 /* ViewController.m */,
+				04C12EC6215F8FF400570CD3 /* Assets.xcassets */,
+				04C12EC8215F8FF400570CD3 /* Main.storyboard */,
+				04C12ECB215F8FF400570CD3 /* Info.plist */,
+				04C12ECC215F8FF400570CD3 /* main.m */,
+				04C12ECE215F8FF400570CD3 /* ReSignTool.entitlements */,
+			);
+			path = ReSignTool;
+			sourceTree = "<group>";
+		};
+		04C12ED6215F8FF500570CD3 /* ReSignToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				04C12ED7215F8FF500570CD3 /* ReSignToolTests.m */,
+				04C12ED9215F8FF500570CD3 /* Info.plist */,
+			);
+			path = ReSignToolTests;
+			sourceTree = "<group>";
+		};
+		04C12EE1215F8FF500570CD3 /* ReSignToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04C12EE2215F8FF500570CD3 /* ReSignToolUITests.m */,
+				04C12EE4215F8FF500570CD3 /* Info.plist */,
+			);
+			path = ReSignToolUITests;
+			sourceTree = "<group>";
+		};
+		04C12EF0215F90E800570CD3 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				04C12EF1215F90E800570CD3 /* NSTextField+Copypast.h */,
+				04C12EF2215F90E800570CD3 /* NSTextField+Copypast.m */,
+				04C12EF3215F90E800570CD3 /* NSTextField+Dragging.h */,
+				04C12EF4215F90E800570CD3 /* NSTextField+Dragging.m */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04C12EBC215F8FE800570CD3 /* ReSignTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C12EE7215F8FF500570CD3 /* Build configuration list for PBXNativeTarget "ReSignTool" */;
+			buildPhases = (
+				04C12EB9215F8FE800570CD3 /* Sources */,
+				04C12EBA215F8FE800570CD3 /* Frameworks */,
+				04C12EBB215F8FE800570CD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReSignTool;
+			productName = ReSignTool;
+			productReference = 04C12EBD215F8FE800570CD3 /* ReSignTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04C12ED2215F8FF500570CD3 /* ReSignToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C12EEA215F8FF500570CD3 /* Build configuration list for PBXNativeTarget "ReSignToolTests" */;
+			buildPhases = (
+				04C12ECF215F8FF500570CD3 /* Sources */,
+				04C12ED0215F8FF500570CD3 /* Frameworks */,
+				04C12ED1215F8FF500570CD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04C12ED5215F8FF500570CD3 /* PBXTargetDependency */,
+			);
+			name = ReSignToolTests;
+			productName = ReSignToolTests;
+			productReference = 04C12ED3215F8FF500570CD3 /* ReSignToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04C12EDD215F8FF500570CD3 /* ReSignToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C12EED215F8FF500570CD3 /* Build configuration list for PBXNativeTarget "ReSignToolUITests" */;
+			buildPhases = (
+				04C12EDA215F8FF500570CD3 /* Sources */,
+				04C12EDB215F8FF500570CD3 /* Frameworks */,
+				04C12EDC215F8FF500570CD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04C12EE0215F8FF500570CD3 /* PBXTargetDependency */,
+			);
+			name = ReSignToolUITests;
+			productName = ReSignToolUITests;
+			productReference = 04C12EDE215F8FF500570CD3 /* ReSignToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04C12EB5215F8FE800570CD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					04C12EBC215F8FE800570CD3 = {
+						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					04C12ED2215F8FF500570CD3 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 04C12EBC215F8FE800570CD3;
+					};
+					04C12EDD215F8FF500570CD3 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 04C12EBC215F8FE800570CD3;
+					};
+				};
+			};
+			buildConfigurationList = 04C12EB8215F8FE800570CD3 /* Build configuration list for PBXProject "ReSignTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04C12EB4215F8FE800570CD3;
+			productRefGroup = 04C12EBE215F8FE800570CD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04C12EBC215F8FE800570CD3 /* ReSignTool */,
+				04C12ED2215F8FF500570CD3 /* ReSignToolTests */,
+				04C12EDD215F8FF500570CD3 /* ReSignToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04C12EBB215F8FE800570CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C12EC7215F8FF400570CD3 /* Assets.xcassets in Resources */,
+				04C12ECA215F8FF400570CD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C12ED1215F8FF500570CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C12EDC215F8FF500570CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04C12EB9215F8FE800570CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C12EF6215F90E800570CD3 /* NSTextField+Dragging.m in Sources */,
+				04C12EC5215F8FE800570CD3 /* ViewController.m in Sources */,
+				04C12EF5215F90E800570CD3 /* NSTextField+Copypast.m in Sources */,
+				04C12ECD215F8FF400570CD3 /* main.m in Sources */,
+				04C12EC2215F8FE800570CD3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C12ECF215F8FF500570CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C12ED8215F8FF500570CD3 /* ReSignToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C12EDA215F8FF500570CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C12EE3215F8FF500570CD3 /* ReSignToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04C12ED5215F8FF500570CD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04C12EBC215F8FE800570CD3 /* ReSignTool */;
+			targetProxy = 04C12ED4215F8FF500570CD3 /* PBXContainerItemProxy */;
+		};
+		04C12EE0215F8FF500570CD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04C12EBC215F8FE800570CD3 /* ReSignTool */;
+			targetProxy = 04C12EDF215F8FF500570CD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04C12EC8215F8FF400570CD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C12EC9215F8FF400570CD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04C12EE5215F8FF500570CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		04C12EE6215F8FF500570CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		04C12EE8215F8FF500570CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BUSLFV36ZF;
+				INFOPLIST_FILE = ReSignTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = first.ReSignTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		04C12EE9215F8FF500570CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BUSLFV36ZF;
+				INFOPLIST_FILE = ReSignTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = first.ReSignTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		04C12EEB215F8FF500570CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BUSLFV36ZF;
+				INFOPLIST_FILE = ReSignToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = first.ReSignToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReSignTool.app/Contents/MacOS/ReSignTool";
+			};
+			name = Debug;
+		};
+		04C12EEC215F8FF500570CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BUSLFV36ZF;
+				INFOPLIST_FILE = ReSignToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = first.ReSignToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReSignTool.app/Contents/MacOS/ReSignTool";
+			};
+			name = Release;
+		};
+		04C12EEE215F8FF500570CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BUSLFV36ZF;
+				INFOPLIST_FILE = ReSignToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = first.ReSignToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ReSignTool;
+			};
+			name = Debug;
+		};
+		04C12EEF215F8FF500570CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BUSLFV36ZF;
+				INFOPLIST_FILE = ReSignToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = first.ReSignToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ReSignTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04C12EB8215F8FE800570CD3 /* Build configuration list for PBXProject "ReSignTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C12EE5215F8FF500570CD3 /* Debug */,
+				04C12EE6215F8FF500570CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C12EE7215F8FF500570CD3 /* Build configuration list for PBXNativeTarget "ReSignTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C12EE8215F8FF500570CD3 /* Debug */,
+				04C12EE9215F8FF500570CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C12EEA215F8FF500570CD3 /* Build configuration list for PBXNativeTarget "ReSignToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C12EEB215F8FF500570CD3 /* Debug */,
+				04C12EEC215F8FF500570CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C12EED215F8FF500570CD3 /* Build configuration list for PBXNativeTarget "ReSignToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C12EEE215F8FF500570CD3 /* Debug */,
+				04C12EEF215F8FF500570CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04C12EB5215F8FE800570CD3 /* Project object */;
+}
