@@ -206,13 +206,23 @@ static const char *typeKey = "typeKey";
 	NSString *appPath = [self appFile];
 	
 	NSFileManager *fileManager = [NSFileManager defaultManager];
-	NSArray *contents = [fileManager subpathsOfDirectoryAtPath:appPath error:nil];
+//	NSArray *contents = [fileManager subpathsOfDirectoryAtPath:appPath error:nil];
+//
+//	NSString *match = @"*.framework";
+//	NSString *match2 = @"*.dylib"; // 有些swift项目会有类似libSwiftUIKit.dylib框架
+//
+//	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF like %@ || SELF like %@",match,match2];
+//	contents = [contents filteredArrayUsingPredicate:predicate];
 	
-	NSString *match = @"*.framework";
-	NSString *match2 = @"*.dylib"; // 有些swift项目会有类似libSwiftUIKit.dylib框架
-	
-	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF like %@ || SELF like %@",match,match2];
-	contents = [contents filteredArrayUsingPredicate:predicate];
+	NSMutableArray *subDirMu = [NSMutableArray array];
+	NSDirectoryEnumerator *dirEnum = [fileManager enumeratorAtPath:appPath];
+	NSString *file;
+	while ((file = [dirEnum nextObject])) {
+		if ([[file pathExtension] isEqualToString:@"framework"] || [[file pathExtension] isEqualToString:@"dylib"]) {
+			[subDirMu addObject:file];
+		}
+	}
+	NSArray *contents = [subDirMu copy];
 	
 		// 对文件进行排序，确保按照内部往外签名 倒叙
 	contents = [contents sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
