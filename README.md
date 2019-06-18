@@ -16,4 +16,7 @@
 ## 7.在输入框中输入重签之后的文件名以.ipa结尾
 ## 8.最后直接点击打包就行，
 会自动压缩
-![image](https://github.com/CYZZ/ReSignTool/blob/master/images/mainAppView.jpg）
+![image](https://github.com/CYZZ/ReSignTool/blob/master/images/mainAppView.jpg)
+
+可以看到相关的文件结构
+![image](https://github.com/CYZZ/ReSignTool/blob/master/images/allStart.jpg)
