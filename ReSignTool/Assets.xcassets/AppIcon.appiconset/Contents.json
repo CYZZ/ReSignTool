@@ -3,61 +3,61 @@
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "sinture16.jpg",
+      "filename" : "sinture16.png",
       "scale" : "1x"
     },
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "sinture16@2x.jpg",
+      "filename" : "sinture16@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "sinture32.jpg",
+      "filename" : "sinture32.png",
       "scale" : "1x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "sinture32@2x.jpg",
+      "filename" : "sinture32@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "sinture128.jpg",
+      "filename" : "sinture128.png",
       "scale" : "1x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "sinture128@2x.jpg",
+      "filename" : "sinture128@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "sinture512-1.jpg",
+      "filename" : "sinture256.png",
       "scale" : "1x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "sinture@2x-1.jpg",
+      "filename" : "sinture256@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "sinture512.jpg",
+      "filename" : "sinture.png",
       "scale" : "1x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "sinture@2x.jpg",
+      "filename" : "sinture@2x.png",
       "scale" : "2x"
     }
   ],
