@@ -24,4 +24,10 @@
 }
 
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
+	// 最后一个窗口关闭之后直接退出应用
+	return YES;
+}
+
+
 @end

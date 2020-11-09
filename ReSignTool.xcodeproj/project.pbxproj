@@ -16,6 +16,10 @@
 		04C12EE3215F8FF500570CD3 /* ReSignToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C12EE2215F8FF500570CD3 /* ReSignToolUITests.m */; };
 		04C12EF5215F90E800570CD3 /* NSTextField+Copypast.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C12EF2215F90E800570CD3 /* NSTextField+Copypast.m */; };
 		04C12EF6215F90E800570CD3 /* NSTextField+Dragging.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C12EF4215F90E800570CD3 /* NSTextField+Dragging.m */; };
+		5F1E5AA225525B680025D85D /* Remove_dylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E5A9D25525B680025D85D /* Remove_dylib.m */; };
+		5F1E5AA325525B680025D85D /* Insert_dylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E5AA025525B680025D85D /* Insert_dylib.m */; };
+		5F1E5AAA25525BBE0025D85D /* DylibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E5AA925525BBE0025D85D /* DylibViewController.m */; };
+		5F1E5AB125528DE60025D85D /* DylibManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E5AB025528DE60025D85D /* DylibManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,14 @@
 		04C12EF2215F90E800570CD3 /* NSTextField+Copypast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextField+Copypast.m"; sourceTree = "<group>"; };
 		04C12EF3215F90E800570CD3 /* NSTextField+Dragging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextField+Dragging.h"; sourceTree = "<group>"; };
 		04C12EF4215F90E800570CD3 /* NSTextField+Dragging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextField+Dragging.m"; sourceTree = "<group>"; };
+		5F1E5A9D25525B680025D85D /* Remove_dylib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Remove_dylib.m; sourceTree = "<group>"; };
+		5F1E5A9E25525B680025D85D /* Remove_dylib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Remove_dylib.h; sourceTree = "<group>"; };
+		5F1E5AA025525B680025D85D /* Insert_dylib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Insert_dylib.m; sourceTree = "<group>"; };
+		5F1E5AA125525B680025D85D /* Insert_dylib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Insert_dylib.h; sourceTree = "<group>"; };
+		5F1E5AA825525BBE0025D85D /* DylibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DylibViewController.h; sourceTree = "<group>"; };
+		5F1E5AA925525BBE0025D85D /* DylibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DylibViewController.m; sourceTree = "<group>"; };
+		5F1E5AAF25528DE60025D85D /* DylibManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DylibManager.h; sourceTree = "<group>"; };
+		5F1E5AB025528DE60025D85D /* DylibManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DylibManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,7 @@
 				04C12EC1215F8FE800570CD3 /* AppDelegate.m */,
 				04C12EC3215F8FE800570CD3 /* ViewController.h */,
 				04C12EC4215F8FE800570CD3 /* ViewController.m */,
+				5F1E5A9B25525B1D0025D85D /* InsetRemoveDylib */,
 				04C12EC6215F8FF400570CD3 /* Assets.xcassets */,
 				04C12EC8215F8FF400570CD3 /* Main.storyboard */,
 				04C12ECB215F8FF400570CD3 /* Info.plist */,
@@ -147,6 +160,53 @@
 				04C12EF4215F90E800570CD3 /* NSTextField+Dragging.m */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		5F1E5A9B25525B1D0025D85D /* InsetRemoveDylib */ = {
+			isa = PBXGroup;
+			children = (
+				5F1E5AAE25528DA10025D85D /* Model */,
+				5F1E5AA725525B7D0025D85D /* Controller */,
+				5F1E5A9F25525B680025D85D /* Insert_dylib */,
+				5F1E5A9C25525B680025D85D /* Remove_dylib */,
+			);
+			path = InsetRemoveDylib;
+			sourceTree = "<group>";
+		};
+		5F1E5A9C25525B680025D85D /* Remove_dylib */ = {
+			isa = PBXGroup;
+			children = (
+				5F1E5A9E25525B680025D85D /* Remove_dylib.h */,
+				5F1E5A9D25525B680025D85D /* Remove_dylib.m */,
+			);
+			path = Remove_dylib;
+			sourceTree = "<group>";
+		};
+		5F1E5A9F25525B680025D85D /* Insert_dylib */ = {
+			isa = PBXGroup;
+			children = (
+				5F1E5AA125525B680025D85D /* Insert_dylib.h */,
+				5F1E5AA025525B680025D85D /* Insert_dylib.m */,
+			);
+			path = Insert_dylib;
+			sourceTree = "<group>";
+		};
+		5F1E5AA725525B7D0025D85D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F1E5AA825525BBE0025D85D /* DylibViewController.h */,
+				5F1E5AA925525BBE0025D85D /* DylibViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F1E5AAE25528DA10025D85D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F1E5AAF25528DE60025D85D /* DylibManager.h */,
+				5F1E5AB025528DE60025D85D /* DylibManager.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1E5AA225525B680025D85D /* Remove_dylib.m in Sources */,
 				04C12EF6215F90E800570CD3 /* NSTextField+Dragging.m in Sources */,
+				5F1E5AA325525B680025D85D /* Insert_dylib.m in Sources */,
+				5F1E5AAA25525BBE0025D85D /* DylibViewController.m in Sources */,
+				5F1E5AB125528DE60025D85D /* DylibManager.m in Sources */,
 				04C12EC5215F8FE800570CD3 /* ViewController.m in Sources */,
 				04C12EF5215F90E800570CD3 /* NSTextField+Copypast.m in Sources */,
 				04C12ECD215F8FF400570CD3 /* main.m in Sources */,
@@ -447,10 +511,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = BUSLFV36ZF;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ReSignTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,10 +531,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = BUSLFV36ZF;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ReSignTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
