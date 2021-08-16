@@ -15,6 +15,7 @@
 static NSString *kTYPEFramework = @"task Framework";
 static NSString *kZip = @"task zip";
 static NSString *kApp = @"task app";
+static NSString *kPlugin = @"task appex";
 static NSString *kEntitlements = @"task create entitlements.plist";
 static NSString *kDelete = @"task delete _CodeSignature";
 static NSString *kCopy = @"task copy embedded.mobileprovision";
@@ -35,6 +36,7 @@ static const char *typeKey = "typeKey";
 @property (weak) IBOutlet NSButton *replaceBundleIDButton;
 
 @property(nonatomic, strong) NSMutableArray *frameworksArray;
+@property(nonatomic, strong) NSMutableArray *pluginsArray;
 
 @end
 
@@ -106,7 +108,8 @@ static const char *typeKey = "typeKey";
 	[self doAppBundleIDChange];
 	[self deleteCodeSignature];
 	[self copyProvision];
-	[self codesignFrameworks];
+	[self codesignPlugins];
+	//	[self codesignFrameworks];
 		//	[self codesignApp];
 	
 }
@@ -199,6 +202,75 @@ static const char *typeKey = "typeKey";
 	
 	return YES;
 }
+
+/// 对plugin进行签名
+- (BOOL)codesignPlugins {
+	NSString *appPath = [self appFile];
+	NSString *PluginPath = [appPath stringByAppendingPathComponent:@"PlugIns"];
+	
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	BOOL isDir = NO;
+	BOOL exists = [fileManager fileExistsAtPath:PluginPath isDirectory:&isDir];
+	
+	
+	if (exists && isDir == YES) {
+		NSMutableArray *subDirMu = [NSMutableArray array];
+		NSDirectoryEnumerator *dirEnum = [fileManager enumeratorAtPath:appPath];
+		NSString *file;
+		while ((file = [dirEnum nextObject])) {
+			if ([[file pathExtension] isEqualToString:@"appex"]) {
+				[subDirMu addObject:file];
+			}
+		}
+		self.pluginsArray = subDirMu;
+		[self begincodesignPlugin];
+	} else {
+		[self codesignFrameworks];
+	}
+	return YES;
+}
+
+/// 开始逐个进行签名
+- (BOOL)begincodesignPlugin{
+	NSString *appPath = [self appFile];
+	
+	NSString *fileName = self.pluginsArray.lastObject;
+	
+	// 如果没有动态库直接对app进行签名
+	if (self.pluginsArray.count == 0) {
+		[self codesignFrameworks];
+		return NO;
+	}
+	
+	if (fileName.length > 0) {
+		
+		[self log:[NSString stringWithFormat:@"Copy embedded to plugin --%@",fileName]];
+		NSString *embeddedFile = [fileName stringByAppendingPathComponent:@"embedded.mobileprovision"];
+		[self log:@"copy embeddedFile"];
+		[self processTask:@"/bin/cp" arguments:@[[self provisionFile], embeddedFile] currentDir:appPath taskType:kCopy];
+		
+		NSString *taskTye = [@"codesigned  -" stringByAppendingString:fileName];
+		[self log:[NSString stringWithFormat:@"codesigning--%@",fileName]];
+		
+		[self processTask:@"/usr/bin/codesign"
+				arguments:@[@"-f",
+							@"-s",
+							[NSString stringWithFormat:@"%@", [self certName]],
+							@"--entitlements",
+							[self entitlementFile],
+							fileName]
+			   currentDir:appPath
+				 taskType:taskTye];
+		[self.pluginsArray removeLastObject]; // 签名完之后就移除
+		
+		return YES;
+	} else {
+		return NO;
+	}
+	
+   
+}
+
 
 	/// 签名framework
 - (BOOL)codesignFrameworks{
@@ -428,6 +500,15 @@ static const char *typeKey = "typeKey";
 	} else {
 		NSString *type = objc_getAssociatedObject(fileHandle, typeKey);
 		[self log:[NSString stringWithFormat: @"%@  completed",type]];
+		
+		// 逐个签名插件
+		if ([[type pathExtension] isEqualToString:@"appex"]) {
+			if (self.pluginsArray.count > 0) {
+				[self begincodesignPlugin];
+			} else {
+				[self codesignFrameworks];
+			}
+		}
 		
 			// 等上一个framework签名完成之后继续签名下一个文件
 		if ([[type pathExtension] isEqualToString:@"framework"] || [[type pathExtension] isEqualToString:@"dylib"] ) {
